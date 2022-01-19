@@ -12,7 +12,7 @@ export const LocationList = () => {
   }, []);
 
   return (
-    <>
+    <div>
       {locations.map((locationObject) => {
         return (
           <p key={`location--${locationObject.id}`}>
@@ -22,6 +22,6 @@ export const LocationList = () => {
           </p>
         );
       })}
-    </>
+    </div>
   );
 };
