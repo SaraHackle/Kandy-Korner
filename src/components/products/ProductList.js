@@ -12,7 +12,7 @@ export const ProductList = () => {
   }, []);
 
   return (
-    <>
+    <div>
       {products.map((productObject) => {
         return (
           <p key={`product--${productObject.id}`}>
@@ -23,6 +23,6 @@ export const ProductList = () => {
           </p>
         );
       })}
-    </>
+    </div>
   );
 };
